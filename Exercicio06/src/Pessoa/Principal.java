@@ -17,7 +17,7 @@ public class Principal {
 		
 		p.setDataNascimento(LocalDate.parse(JOptionPane.showInputDialog("Digite sua data de nascimento:"),formatoData));
 		
-		p.setAltura(Float.parseFloat(JOptionPane.showInputDialog("Digite sua idade:")));
+		p.setAltura(Float.parseFloat(JOptionPane.showInputDialog("Digite sua altura:")));
 		
 		JOptionPane.showInternalMessageDialog(null, p.dados());
 		
