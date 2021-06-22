@@ -12,7 +12,8 @@ public class Pessoa {
 	public int idade() {
 		LocalDate hoje = LocalDate.now();
 		int idade = hoje.getYear() - dataNascimento.getYear();
-		if (dataNascimento.getMonthValue() > hoje.getMonthValue() || (dataNascimento.getMonthValue() == hoje.getMonthValue()
+		if (dataNascimento.getMonthValue() > hoje.getMonthValue() 
+				|| (dataNascimento.getMonthValue() == hoje.getMonthValue()
 				&& dataNascimento.getDayOfMonth() > hoje.getDayOfMonth()) 
 		
 		) {
@@ -28,8 +29,7 @@ public class Pessoa {
 		
 	}
 	
-	
-	
+
 	public String getNome() {
 		return nome;
 	}
